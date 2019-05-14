@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initData();
 
-        channelList = findViewById(R.id.channelList);
+        channelList =  findViewById(R.id.channelList);
+
         listAdapter = new ChannelListAdapter(this.data, new ChannelClickListener() {
             @Override
             public void onClick(View view, int position) {
